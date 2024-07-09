@@ -1,0 +1,12 @@
+@import "./lib/normalize.css";
+@import "./variables.scss";
+@import "./fonts";
+@import "./settings.scss";
+
+@import "./components/header.scss";
+@import "./components/signin.scss";
+@import "./components/atm.scss";
+@import "./components/accounts";
+@import "./components/account.scss";
+@import "./components/details.scss";
+@import "./components/currency.scss";

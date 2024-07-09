@@ -1,0 +1,131 @@
+.currency {
+  padding-top: 50px;
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__wrapper {
+    margin-right: 50px;
+    width: calc(43% - 25px);
+  }
+
+  .your-currency {
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px 0 rgba(#000000, 0.25);
+
+    &__string {
+      display: flex;
+      width: 100%;
+    }
+
+    &__dots {
+      overflow: hidden;
+    }
+
+    &__value {
+      // text-wrap: nowrap;
+    }
+  }
+
+  .exchange {
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px 0 rgba(#000000, 0.25);
+
+    &__form {
+      display: flex;
+    }
+
+    &__fields {
+      display: flex;
+      flex-direction: column;
+      margin-right: 25px;
+      width: 100%;
+    }
+
+    &__selects {
+      display: flex;
+      margin-bottom: 25px;
+
+      label {
+        &:not(:last-of-type) {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    &__label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__select {
+      margin-left: 20px;
+      padding: 0 15px;
+      height: 45px;
+      min-width: 135px;
+      width: 100%;
+    }
+
+    &__input {
+      flex: 1;
+      margin-left: 10px;
+      padding: 0 15px;
+      height: 45px;
+    }
+  }
+
+  .courses {
+    padding: 50px;
+    width: calc(57% - 25px);
+    border-radius: 50px;
+    background-color: $color-grey_light;
+
+    &__string {
+      display: flex;
+      max-width: 100%;
+    }
+
+    &__dots {
+      overflow: hidden;
+      color: green;
+
+      &--red {
+        color: red;
+      }
+    }
+
+    &__value {
+      position: relative;
+      padding-right: 30px;
+      // text-wrap: nowrap;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        border-top: 10px solid green;
+        border-right: 10px solid transparent;
+        border-bottom: none;
+        border-left: 10px solid transparent;
+        transform: translateY(-50%);
+      }
+
+      &--red::before {
+        border-bottom: 10px solid red;
+        border-right: 10px solid transparent;
+        border-top: none;
+        border-left: 10px solid transparent;
+      }
+    }
+  }
+}

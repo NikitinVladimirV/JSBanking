@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 1540px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: $color-blue;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-blue_light;
+  }
+
+  &.active {
+    background-color: $color-blue_dark;
+  }
+
+  &:disabled {
+    background-color: $color-grey;
+  }
+
+  &.icon-text {
+  }
+
+  &.outline {
+    border-color: $color-blue;
+    color: $color-blue;
+    background-color: #fff;
+
+    &:hover {
+      border-color: $color-blue_light;
+      background-color: $color-blue_super-light;
+    }
+
+    &.active {
+      background-color: $color-blue_very-super-light;
+    }
+
+    &:disabled {
+      border-color: $color-grey;
+      color: $color-grey;
+    }
+  }
+
+  &.tags {
+  }
+
+  &.text {
+    background-color: transparent;
+    color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue_super-light;
+    }
+
+    &.active {
+      background-color: $color-blue_very-super-light;
+    }
+
+    &:disabled {
+      color: $color-grey;
+    }
+  }
+
+  &.icon {
+  }
+
+  &.dots {
+  }
+}

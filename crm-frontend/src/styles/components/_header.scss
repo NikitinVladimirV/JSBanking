@@ -1,0 +1,26 @@
+.header {
+  min-height: 100px;
+  background-color: #116acc;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+
+  &__logo {
+    font-size: 48px;
+    color: #fff;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}

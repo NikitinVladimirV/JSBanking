@@ -1,0 +1,74 @@
+.signin {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+  }
+
+  .form-signin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: #f3f4f6;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    &__label {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-family: "Ubuntu", "Times New Roman", Times, serif;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 20px;
+      color: #182233;
+
+      &:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__error {
+      // display: none;
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      min-width: max-content;
+      color: red;
+      transform: translateX(-50%);
+
+      // &.active {
+      //   display: inline;
+      // }
+    }
+
+    &__input {
+      margin-left: 20px;
+      padding: 10px 16px;
+      width: 300px;
+      height: 45px;
+      border: 1px solid #9ca3af;
+      border-radius: 7px;
+
+      &::placeholder {
+        font-family: "Ubuntu", "Times New Roman", Times, serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 24px;
+        color: #6b7280;
+      }
+    }
+  }
+}
